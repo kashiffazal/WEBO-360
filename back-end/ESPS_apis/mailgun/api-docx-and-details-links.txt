@@ -1,0 +1,42 @@
+Login Account
+-------------
+https://www.mailgun.com
+Username: careers@collegedegreesconnect.com
+Password: f,R]L{G|2fEDRZa%)(!&
+
+cPanel
+------
+https://174.136.12.67:2083/
+Username: cdc1
+Password: f,R]L{G|2fEDRZa%)(!&
+
+Private API key : 39eb137ba66dc17712fd97f3a465d545-9c988ee3-60a6c3e8
+Public validation key : pubkey-0f87e4583fe351af3d276a7a220f7b43
+HTTP webhook signing key : 39eb137ba66dc17712fd97f3a465d545-9c988ee3-60a6c3e8
+Domain : wm.webo360mailer.com
+
+Documentation
+-------------
+https://documentation.mailgun.com/en/latest/api-sending.html#examples
+
+PHP Liberary on Github
+-----------------------
+https://github.com/mailgun/mailgun-php
+
+
+20200131120951.1.5DFCA33103880C43@wm.webo360mailer.com
+20200131124127.1.A015DB684D673E1B@wm.webo360mailer.com
+20200131134208.1.63740A1F4F122808@wm.webo360mailer.com
+20200131165244.1.C577DC9A45D1F422@wm.webo360mailer.com
+
+With Bounce
+162-56e6-category-[<20200203102853.1.DE7AF37FE9C12055@wm.webo360mailer.com>]
+163-5aea-category-[<20200203104129.1.645762DBA47E9377@wm.webo360mailer.com>]
+
+With Bounce and Spam
+163-ba32-category-[<20200203141958.1.E8CC2AE87258A756@wm.webo360mailer.com>]
+164-e092-category-[<20200203145325.1.3DE88871C2461525@wm.webo360mailer.com>]
+164-9417-category-[<20200203152022.1.903431D7C7627198@wm.webo360mailer.com>]
+165-4f4a-category-[<20200203152619.1.D7DCCFFB235D2DEB@wm.webo360mailer.com>]
+166-ac9b-category-[<20200203153140.1.DA9AF6A5932E8A9A@wm.webo360mailer.com>]
+166-0387-category-[<20200203155056.1.A7E79C35B15A62C4@wm.webo360mailer.com>]

@@ -1,0 +1,8 @@
+back-end\ESPS_apis\mailgun\mailgun-php\vendor\mailgun\mailgun-php\src\HttpClient\HttpClientConfigurator.php
+line 34
+back-end\ESPS_apis\mailgun\mailgun-php\vendor\mailgun\mailgun-php\src\Mailgun.php
+line 68
+
+Base URL
+---------
+Default (US) : https://api.mailgun.net TO (EU) https://api.eu.mailgun.net

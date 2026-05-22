@@ -1,0 +1,6 @@
+[
+  {"html" : "<firstname/>", "template" : "[first_name]"},
+  {"html" : "<lastname/>", "template" : "[last_name]"},
+  {"html" : "<fullname/>", "template" : "[full_name]"},
+  {"html" : "<unsubscribe></unsubscribe>", "template" : "[unsubscribe]"}
+]

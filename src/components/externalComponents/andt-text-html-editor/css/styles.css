@@ -1,0 +1,78 @@
+@import '~codemirror/lib/codemirror.css';
+
+
+.c_k_editor_0 .container,
+.c_k_editor_0 .singleContainer{
+    border: 1px solid #e8e8e8;
+    padding: 10px;
+    margin-top: -16px;
+    border-top: 0px;
+    border-radius: 0px 1px 3px 3px;
+    background: #fff;
+}
+.c_k_editor_0 .subContainer{
+    border: 1px solid #cacaca;
+    padding: 10px;
+    background: #f7f7f7;
+}
+.c_k_editor_0 .singleContainer{
+    border: 1px solid #cacaca;
+    background: #f7f7f7;
+    box-shadow: 3px 3px 4px #ededed;
+    margin-bottom: 20px;
+}
+.c_k_editor_0 .singleCodeEditorTitle{
+    border: 1px solid #cacaca;
+    padding: 5px 10px;
+    border-radius: 2px 2px 0px 0px;
+    border-bottom: none;
+    background: #efefef;
+    font-size: 14px;
+    font-weight: 700;
+}
+.c_k_editor_0 .htmlCodeEditor{
+    height: inherit;
+}
+
+.c_k_editor_0 .htmlCodeEditor .CodeMirror{
+    height: inherit;
+}
+
+
+
+
+
+.c_k_editor_0 .tox-statusbar__branding{display: none;}
+
+/*Scroll*/
+.c_k_editor_0 .scroll::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+.c_k_editor_0 .scroll::-webkit-scrollbar{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+.c_k_editor_0 .scroll::-webkit-scrollbar-thumb{
+	background-color: #AAA;
+	border-radius: 10px;
+	background-image: -webkit-linear-gradient(90deg,rgba(0, 0, 0, .2) 25%,transparent 25%,transparent 50%,rgba(0, 0, 0, .2) 50%,rgba(0, 0, 0, .2) 75%,transparent 75%,transparent)
+}
+
+/*Setting CKEditor5 height*/
+.c_k_editor_0 .CKEditor5_styles .ck-editor{height:inherit;}
+.c_k_editor_0 .CKEditor5_styles .ck-editor__main{height:inherit;}
+.c_k_editor_0 .CKEditor5_styles .ck-editor__editable_inline{height:91.5%;}
+/*Setting CKEditor4 height*/
+.c_k_editor_0 .CKEditor4_styles .cke_1,
+.c_k_editor_0 .CKEditor4_styles .cke,
+.c_k_editor_0 .CKEditor4_styles .cke_inner{height:inherit;}
+.c_k_editor_0 .CKEditor4_styles .cke_contents{height:77.5% !important;}
+/*Setting CKEditor4 bg color*/
+.c_k_editor_0 .CKEditor4_styles .cke_top,
+.c_k_editor_0 .CKEditor4_styles .cke_top .cke_toolgroup,
+.c_k_editor_0 .CKEditor4_styles .cke_top .cke_combo_button,
+.c_k_editor_0 .CKEditor4_styles .cke_bottom{background: unset !important;}

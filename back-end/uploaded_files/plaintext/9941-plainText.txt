@@ -1,0 +1,32 @@
+Welcome to Dann's Example HTML Page
+On this page, you'll see some text formatted with HTML. You can use this file to see how some of the examples from my article on HTML examples work.
+The best way to play around with this document is to open it in a text editor and your browser at the same time. When you make changes in the text editor, save the document and refresh your browser.
+Some Good Uses of Your New HTML Skills
+Building an entire website from scratch.
+Making tweaks and changes to sites built in WordPress.
+Formatting emails in HTML.
+Impressing your friends with your HTML wizardry.
+A Few of My Favorite Facts
+A coyote can hear a mouse moving under a foot of snow.
+A mole can dig a 300-foot tunnel in one night.
+A sneeze travels about 100 miles per hour.
+Donald Duck comics were banned in Finland because he doesn't wear any pants. (Turns out this isn't true, but I like the idea anyway.)
+A Few of My Favorite Bands and Their Hometowns
+Band
+Hometown
+Mushroomhead
+Cleveland, OH
+Parkway Drive
+Byron Bay, Australia
+Atreyu
+Orange County, CA
+After the Burial
+Minneapolis, MN
+Here's a Picture of a Wolf
+Thanks to Flickr user Katerina Hlavata.
+I couldn't find a good quote about wolves, so here's one that just sounds pretty cool: If you live among wolves, you have to act like a wolf. &acirc;&#128;&#148;Nikita Khruschev
+Like I said, not exactly what I was looking for. But it works for a blockquote.
+Some Closing Notes
+If you liked this HTML example, please share the article that I wrote about basic HTML. It would mean a lot to me.
+If you want a good complete HTML reference, W3Schools has a great one.
+And, finally, check out this article on CSS to level up your powers.

@@ -1,0 +1,280 @@
+CREATE TABLE users
+( id INT AUTO_INCREMENT PRIMARY KEY,
+	first_name text DEFAULT NULL,
+	last_name text DEFAULT NULL,
+	username text DEFAULT NULL,
+  password text DEFAULT NULL,
+	company_name text DEFAULT NULL,
+	gender text DEFAULT NULL,
+	contact_number text DEFAULT NULL,
+	email text DEFAULT NULL,
+	country text DEFAULT NULL,
+	city text DEFAULT NULL,
+	address text DEFAULT NULL,
+	profileImage text DEFAULT NULL,
+  role text DEFAULT NULL,
+  status text DEFAULT NULL,
+	fromName text DEFAULT NULL,
+	fromEmail text DEFAULT NULL,
+	replayToName text DEFAULT NULL,
+	replayToEmail text DEFAULT NULL,
+	testEmail text DEFAULT NULL,
+	confirmationEmail text DEFAULT NULL,
+	default_esps_sr_id text DEFAULT NULL,
+	default_esps_sr_ac_id text DEFAULT NULL,
+	link_domain_path text DEFAULT NULL,
+	default_smtp_id text DEFAULT NULL,
+  inserted_date text DEFAULT NULL,
+  inserted_time text DEFAULT NULL,
+  inserted_by text DEFAULT NULL,
+  updated_date text DEFAULT NULL,
+  updated_time text DEFAULT NULL,
+	updated_by text DEFAULT NULL
+);
+
+CREATE TABLE subscribers_list
+( id INT AUTO_INCREMENT PRIMARY KEY,
+	list_name text DEFAULT NULL,
+	description text DEFAULT NULL,
+	status text DEFAULT NULL,
+  inserted_date text DEFAULT NULL,
+  inserted_time text DEFAULT NULL,
+  inserted_by text DEFAULT NULL,
+  updated_date text DEFAULT NULL,
+  updated_time text DEFAULT NULL,
+	updated_by text DEFAULT NULL
+);
+
+CREATE TABLE subscribers
+( id INT AUTO_INCREMENT PRIMARY KEY,
+	list_ref_id text DEFAULT NULL,
+	first_name text DEFAULT NULL,
+	last_name text DEFAULT NULL,
+  full_name text DEFAULT NULL,
+  email text DEFAULT NULL,
+	sign_up_ip text DEFAULT NULL,
+	sign_up_url text DEFAULT NULL,
+	sign_up_date text DEFAULT NULL,
+	import_from_list text DEFAULT NULL,
+  status text DEFAULT NULL,
+	bounce_by_campaign text DEFAULT NULL,
+	status_history text DEFAULT NULL,
+	inserted_date text DEFAULT NULL,
+	inserted_time text DEFAULT NULL,
+	inserted_by text DEFAULT NULL,
+	updated_date text DEFAULT NULL,
+  updated_time text DEFAULT NULL,
+	updated_by text DEFAULT NULL
+);
+ALTER TABLE subscribers CONVERT TO CHARACTER SET utf8;
+
+
+CREATE TABLE subscriber_status
+( id INT AUTO_INCREMENT PRIMARY KEY,
+	status text DEFAULT NULL,
+	description text DEFAULT NULL,
+	inserted_date text DEFAULT NULL,
+  inserted_time text DEFAULT NULL,
+	inserted_by text DEFAULT NULL,
+	updated_date text DEFAULT NULL,
+  updated_time text DEFAULT NULL,
+	updated_by text DEFAULT NULL
+);
+
+CREATE TABLE campaign
+( id INT AUTO_INCREMENT PRIMARY KEY,
+	campaign_name text DEFAULT NULL,
+	subject_line text DEFAULT NULL,
+	fromName text DEFAULT NULL,
+	fromEmail text DEFAULT NULL,
+	replayToName text DEFAULT NULL,
+	replayToEmail text DEFAULT NULL,
+	template_type text DEFAULT NULL,
+	template_url text DEFAULT NULL,
+	template_file_name text DEFAULT NULL,
+	list_ref_id text DEFAULT NULL,
+	sendType text DEFAULT NULL,
+	scheduleDateTime text DEFAULT NULL,
+	cronJob_id text DEFAULT NULL,
+	cronJob_status text DEFAULT NULL,
+	confirmationEmail text DEFAULT NULL,
+	smtp_ref_id text DEFAULT NULL,
+	esps_sr_id text DEFAULT NULL,
+	esps_sr_ac_id text DEFAULT NULL,
+	recipientsCount text DEFAULT NULL,
+	bounceCount text DEFAULT NULL,
+	server_campaign_id text DEFAULT NULL,
+	status text DEFAULT NULL,
+	log_status text DEFAULT NULL,
+	sent_date text DEFAULT NULL,
+  sent_time text DEFAULT NULL,
+  sent_by text DEFAULT NULL,
+	inserted_date text DEFAULT NULL,
+  inserted_time text DEFAULT NULL,
+	inserted_by text DEFAULT NULL,
+	updated_date text DEFAULT NULL,
+  updated_time text DEFAULT NULL,
+	updated_by text DEFAULT NULL
+);
+
+CREATE TABLE template_links
+( id INT AUTO_INCREMENT PRIMARY KEY,
+	campaign_ref_id text DEFAULT NULL,
+	link_url text DEFAULT NULL,
+	short_url text DEFAULT NULL,
+	inserted_date text DEFAULT NULL,
+  inserted_time text DEFAULT NULL,
+	inserted_by text DEFAULT NULL,
+	updated_date text DEFAULT NULL,
+  updated_time text DEFAULT NULL,
+	updated_by text DEFAULT NULL
+);
+
+CREATE TABLE campaign_report
+( id INT AUTO_INCREMENT PRIMARY KEY,
+	campaign_ref_id text DEFAULT NULL,
+	email_ref_id text DEFAULT NULL,
+	action text DEFAULT NULL,
+	action_date text DEFAULT NULL,
+	action_time text DEFAULT NULL,
+	click_url text DEFAULT NULL,
+	location text DEFAULT NULL
+);
+
+CREATE TABLE smtp
+( id INT AUTO_INCREMENT PRIMARY KEY,
+	name text DEFAULT NULL,
+	SMTPSecure text DEFAULT NULL,
+	host text DEFAULT NULL,
+	port text DEFAULT NULL,
+	custom_header_email text DEFAULT NULL,
+	username text DEFAULT NULL,
+	password text DEFAULT NULL,
+	fromName text DEFAULT NULL,
+	fromEmail text DEFAULT NULL,
+	inserted_date text DEFAULT NULL,
+  inserted_time text DEFAULT NULL,
+	inserted_by text DEFAULT NULL,
+	updated_date text DEFAULT NULL,
+  updated_time text DEFAULT NULL,
+	updated_by text DEFAULT NULL
+);
+
+CREATE TABLE users_role
+( id INT AUTO_INCREMENT PRIMARY KEY,
+  role text DEFAULT NULL,
+	description text DEFAULT NULL,
+	permission_ref_ids text DEFAULT NULL,
+	hideForOthers text DEFAULT NULL,
+	inserted_date text DEFAULT NULL,
+  inserted_time text DEFAULT NULL,
+	inserted_by text DEFAULT NULL,
+	updated_date text DEFAULT NULL,
+  updated_time text DEFAULT NULL,
+	updated_by text DEFAULT NULL
+);
+
+CREATE TABLE users_permission
+( id INT AUTO_INCREMENT PRIMARY KEY,
+  permission text DEFAULT NULL,
+	description text DEFAULT NULL
+);
+
+CREATE TABLE users_status
+( id INT AUTO_INCREMENT PRIMARY KEY,
+	status text DEFAULT NULL,
+	description text DEFAULT NULL,
+	inserted_date text DEFAULT NULL,
+  inserted_time text DEFAULT NULL,
+	inserted_by text DEFAULT NULL,
+	updated_date text DEFAULT NULL,
+  updated_time text DEFAULT NULL,
+	updated_by text DEFAULT NULL
+);
+
+CREATE TABLE esps_accounts
+( id INT AUTO_INCREMENT PRIMARY KEY,
+	server_name text DEFAULT NULL,
+	description text DEFAULT NULL,
+	table_name text DEFAULT NULL,
+	inserted_date text DEFAULT NULL,
+  inserted_time text DEFAULT NULL,
+	inserted_by text DEFAULT NULL,
+	updated_date text DEFAULT NULL,
+  updated_time text DEFAULT NULL,
+	updated_by text DEFAULT NULL
+);
+
+CREATE TABLE esps_sendgrid
+( id INT AUTO_INCREMENT PRIMARY KEY,
+	account_name text DEFAULT NULL,
+	description text DEFAULT NULL,
+	api_key text DEFAULT NULL,
+	link_domain_path text DEFAULT NULL,
+	inserted_date text DEFAULT NULL,
+  inserted_time text DEFAULT NULL,
+	inserted_by text DEFAULT NULL,
+	updated_date text DEFAULT NULL,
+  updated_time text DEFAULT NULL,
+	updated_by text DEFAULT NULL
+);
+
+CREATE TABLE esps_mailgun
+( id INT AUTO_INCREMENT PRIMARY KEY,
+	account_name text DEFAULT NULL,
+	description text DEFAULT NULL,
+	username text DEFAULT NULL,
+	password text DEFAULT NULL,
+	api_key text DEFAULT NULL,
+	link_domain_path text DEFAULT NULL,
+	domain text DEFAULT NULL,
+	inserted_date text DEFAULT NULL,
+  inserted_time text DEFAULT NULL,
+	inserted_by text DEFAULT NULL,
+	updated_date text DEFAULT NULL,
+  updated_time text DEFAULT NULL,
+	updated_by text DEFAULT NULL
+);
+
+CREATE TABLE esps_elasticEmail
+( id INT AUTO_INCREMENT PRIMARY KEY,
+	account_name text DEFAULT NULL,
+	description text DEFAULT NULL,
+	api_key text DEFAULT NULL,
+	link_domain_path text DEFAULT NULL,
+	inserted_date text DEFAULT NULL,
+  inserted_time text DEFAULT NULL,
+	inserted_by text DEFAULT NULL,
+	updated_date text DEFAULT NULL,
+  updated_time text DEFAULT NULL,
+	updated_by text DEFAULT NULL
+);
+
+CREATE TABLE esps_postmark
+( id INT AUTO_INCREMENT PRIMARY KEY,
+	account_name text DEFAULT NULL,
+	description text DEFAULT NULL,
+	api_key text DEFAULT NULL,
+	link_domain_path text DEFAULT NULL,
+	inserted_date text DEFAULT NULL,
+  inserted_time text DEFAULT NULL,
+	inserted_by text DEFAULT NULL,
+	updated_date text DEFAULT NULL,
+  updated_time text DEFAULT NULL,
+	updated_by text DEFAULT NULL
+);
+
+CREATE TABLE esps_mailjet
+( id INT AUTO_INCREMENT PRIMARY KEY,
+	account_name text DEFAULT NULL,
+	description text DEFAULT NULL,
+	api_key text DEFAULT NULL,
+	secret_key text DEFAULT NULL,
+	link_domain_path text DEFAULT NULL,
+	inserted_date text DEFAULT NULL,
+  inserted_time text DEFAULT NULL,
+	inserted_by text DEFAULT NULL,
+	updated_date text DEFAULT NULL,
+  updated_time text DEFAULT NULL,
+	updated_by text DEFAULT NULL
+);

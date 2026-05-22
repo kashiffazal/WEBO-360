@@ -1,0 +1,2 @@
+https://github.com/wildbit/postmark-php/wiki/Handling-Bounces
+https://postmarkapp.com/developer/user-guide/send-email-with-api/batch-emails

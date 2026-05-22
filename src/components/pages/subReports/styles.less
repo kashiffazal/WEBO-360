@@ -1,0 +1,55 @@
+.report-container{
+    .ant-row{
+        .col1, .col2{
+            -webkit-transition: all 220ms;
+            -moz-transition: all 220ms;
+            -o-transition: all 220ms;
+            transition: all 220ms;
+        }
+    }
+    .exportBtnGroup{
+        position:relative;
+        top :-51px;
+        display: inline-block;
+    }
+    .ant-form-explain{display:none;}
+    .tableLabel{
+        font-size: 16px;
+        margin: 0px;
+        margin-top: 3px;
+    }
+    .tableLabel + p{
+        margin: 0px;
+        font-size: 12px;
+    }
+}
+
+
+.colhide{
+    .rowColapse {
+        .col1{
+            width:0%;
+            padding:0px !important;
+            visibility: hidden;
+            opacity: 0;
+            .form-container{padding:0px !important;border:none;}
+        }
+        .col2{width:100%;}
+    }
+}
+
+@media (max-width: 991px) {
+    .report-container .exportBtnGroup{
+        float: right;
+        right: 18px;
+    }
+}/*End 991*/
+
+@media (max-width: 767px) {
+    .report-container .exportBtnGroup{
+        float: left;
+        top: 13px;
+        left: 18px;
+        margin-bottom: 50px;
+    }
+}/*End 991*/

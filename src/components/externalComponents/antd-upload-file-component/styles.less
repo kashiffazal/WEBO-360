@@ -1,0 +1,81 @@
+.c_fileUploaderContainer{
+  .fileNameAfterLoader .ant-upload-list-item{
+    top:39px;
+  }
+  .dragDropContainer{
+    position: relative;
+    .dragDropContentContainer{
+      float: left;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      width:100%;
+      .bg_img{
+        background-image: url('./images/dadg.png');
+        height: 67px;
+        background-position: 0% 5px;
+        background-repeat: no-repeat;
+        float: left;
+        width: 61px;
+        margin-left: 20px;
+      }//End .bg_img
+      .content{
+        float: left;
+        text-align: left;
+        padding: 0px 20px;
+        width: 100%;
+        h3{
+          margin:0px;
+          color: #686868;
+          line-height: 18px;
+        }
+        p{
+          margin:0px;
+          font-size: 12px;
+          color: #7f7f7f;
+        }
+        .hidePara{
+         color: #ff000000;
+        }
+        .extensionError{
+          color:red;
+          font-size:11px
+        }
+        @media (max-width: 976px) {h3{font-size: 14px;}}/*End 976*/
+        @media (max-width: 576px) {h3{font-size: 12px;}}/*End 576*/
+        @media (max-width: 350px) {
+          p,h3{font-size: 10px;}
+        }/*End 350*/
+      }
+    }//End .dragDropContentContainer
+  }//End .dragDropContainer
+  .ant-upload-list-item{
+    margin: 0px;
+    font-size: 12px;
+    line-height: 22px;
+    position: absolute;
+    top: 50px;
+    left: 93px;
+    background: unset;
+  }
+  .ant-upload-list-item:hover .ant-upload-list-item-info{
+    background: unset;
+  }
+  .ant-upload-list-item-name{
+    padding-left:19px
+  }
+  .ant-upload-list-item .anticon-close,
+  .ant-upload-list-item:hover .anticon-close{
+    opacity: 1;
+    right: -5px;
+    top: 5px;
+  }
+  .ant-upload.ant-upload-drag.ant-upload-disabled{
+    background: #f3f3f3;
+  }
+  @media (max-width: 976px) {.ant-upload-list-item{left: 90px;}}/*End 976*/
+  @media (max-width: 576px) {.ant-upload-list-item{left: 87px;}}/*End 576*/
+  @media (max-width: 497px) {.ant-upload-list-item{top: 58px;left: 85px;}}/*End 497*/
+  @media (max-width: 433px) {.ant-upload-list-item{top:52px; left: 82px;}}/*End 433*/
+  @media (max-width: 350px) {.ant-upload-list-item{top:60px; left: 76px;}}/*End 350*/
+}//End .c_fileUploaderContainer

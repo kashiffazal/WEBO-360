@@ -1,0 +1,278 @@
+html, body, #root{
+  height: 100%;
+  margin: 0px;
+}
+.logo{
+  text-align: center;
+  padding:10% 15% 0%;
+}
+.logo img{
+  width:60%;
+  padding-bottom:15px;
+}
+.page-container{
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.split_container{
+  padding: 2% 20%;
+  display: table-cell;
+  vertical-align: middle;
+}
+.split_container > .ant-row{
+  box-shadow: 0px 0px 10px -4px #5d5d5d
+}
+.form-container{
+  background: #fff;
+}
+.form-pad{
+  padding:0% 15%;
+  padding-bottom: 0px;
+}
+.login-content-container{
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.45), 
+    rgba(0, 0, 0, 0.45)
+  ),
+  url(./imgs/content-bg.jpg);
+  background-size: cover;
+  background-position: center bottom;
+}
+.login-content{
+  padding:10% 15%;
+  height: 100%;
+  box-shadow: -10px 0px 8px -5px #cacaca;
+  text-align: center;
+}
+
+.login-content p,
+.login-content h1{
+  color:#fff;
+}
+
+.form-content h1{
+  font-size: 20px;
+}
+.form-content p{
+  font-size: 13px;
+}
+.form-content h1,
+.form-content p{
+  color: #787878;
+  margin: 0;
+}
+.form-content .app_label{
+  font-size: 12px;
+  padding-top:15%;
+  padding-bottom:10%;
+}
+/*Input styles*/
+.form .ant-form-item-label{
+  top: 8px;
+  z-index: 10;
+  background: #fff;
+  left: 10px;
+  display: inline;
+}
+.form .ant-form-item-label label{
+  font-size: 12px;
+  padding: 0px 5px;
+  color: #a9a9a9;
+}
+.form .ant-form-item-label label:before,
+.form .ant-form-item-label label:after{
+  content: '';
+  margin: 0px;
+}
+.form input[type='text'],
+.form input[type='password']{
+  font-size: 13px;
+  padding: 20px 13px;
+}
+.form .ant-input-suffix{
+  color: #a9a9a9;
+}
+.form .ant-form-explain{
+  top: 35px;
+  padding: 0px 5px;
+  background: #fff;
+  width: auto;
+  right: 10px;
+  font-size: 11px !important;
+}
+.form .submitBtn{
+  margin-top: 20px;
+  width: 55%;
+  font-size: 14px;
+}
+
+
+
+
+.forget_password_link{
+  text-align: right;
+  display: inline-block;
+  width: 45%;
+  font-size: 13px;
+}
+
+.footer-signup-bar{
+  padding: 5% 15%;
+  font-size: 12px;
+  color: #000;
+  background: #e4e4e4;
+}
+
+
+
+
+
+.errorEmail .ant-form-item-label label{
+  color:red;
+}
+.errorEmail input{
+  border:1px solid red
+}
+
+.bg-image {
+  background : linear-gradient(
+    rgba(255, 255, 255, 0.8), rgba(99, 119, 154, 0.8) 
+  ),
+  url(./imgs/body-bg.jpg);
+  /* background-image: url('./imgs/body-bg.jpg'); */
+  /* filter: blur(5px);
+  -webkit-filter: blur(5px); */
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  width:100%;
+  transform: scale(1.1);
+}
+
+/*Confirm Email Page*/
+.conEmail{
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conEmail h2{
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 24px;
+  line-height: 1.8;
+  font-weight: 400;
+  margin: 0px;
+}
+.conEmail p{
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 14px;
+  line-height: 1.6;
+ 
+}
+
+@media (max-width: 1200px) {
+  .split_container{
+    padding:3% 15%;
+  }
+}/*End 1200*/
+@media (max-width: 1000px) {
+  .split_container{
+    padding:4% 10%;
+  }
+}/*End 1000*/
+@media (max-width: 996px) {
+  .split_container{
+    padding:5% 5%;
+  }
+}/*End 996*/
+
+@media (max-width: 767px) {
+  .form-pad{
+    padding: 0% 25%;
+  }
+  .logo{
+    padding: 10% 25% 0%
+  }
+  .footer-signup-bar{
+    padding: 5% 25%;
+  }
+  .login-content-container{
+    display: none;
+  }
+  /*Transparent box*/
+  .form-container{
+    background: #ffffff9e
+  }
+  .form .ant-input{
+    background-color: #ffffffc7;
+  }
+  .form .ant-form-item-label{
+    background: #ffffffc7;
+    border-radius: 3px 3px 0px 0px;
+    top: 3px
+  }
+  .form .ant-form-item{margin-top:14px !important}
+  .form .has-error .ant-input-affix-wrapper .ant-input, .has-error .ant-input-affix-wrapper .ant-input:hover{
+    border: 1px solid #dedede;
+    background: #ffffffc7;
+    border-left: 4px solid #e43838;
+  }
+  .form .ant-form-explain{
+    background: #ffffffc7;
+    line-height: 20px;
+    border-radius: 0px 0px 3px 3px;
+    top: 43px;
+  }
+  .footer-signup-bar{
+    color: #fff;
+    background: #0000007d;
+  }
+  .footer-signup-bar a{
+    color: #fff;
+  }
+
+}/*End 767*/
+
+@media (max-width: 567px) {
+  .form-pad{
+    padding: 0% 15%;
+  }
+  .logo{
+    padding: 10% 15% 0%
+  }
+  .footer-signup-bar{
+    padding: 5% 15%;
+  }
+  .login-content-container{
+    display: none;
+  }
+}/*End 567*/
+
+@media (max-width: 420px) {
+  .form-pad{
+    padding: 0% 5%;
+  }
+  .logo{
+    padding: 10% 5% 0%
+  }
+  .footer-signup-bar{
+    padding: 5% 5%;
+  }
+}/*End 420*/
+
+
+/*Rectangle Logo Design*/
+.logo img{
+  width:40%;
+  padding-bottom:30px;
+}

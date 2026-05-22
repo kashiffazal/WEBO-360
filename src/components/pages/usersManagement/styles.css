@@ -1,0 +1,61 @@
+.role_container{
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  border-radius: 4px;
+}
+.role_list{
+  border-bottom: 1px solid #d9d9d9;
+  padding: 10px 20px;
+}
+/* .role_list:last-child{
+  border-bottom: none;
+} */
+.role_blocks{
+  border: 1px solid #e9e9e9;
+  padding: 2px 8px;
+  margin-top: 4px;
+  margin-right: 4px;
+  border-radius: 3px;
+  background: #fafafa;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.userViewModal label{
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+/*Checkbox styles*/
+.checkbox_lines .ant-checkbox{
+  float: left;
+  margin-right: 8px;
+  margin-top: 3px;
+  margin-bottom: 15px;
+}
+.checkbox_lines .ant-form-item-children{
+  line-height: 18px;
+}
+.checkbox_lines .ant-checkbox-wrapper + span, .ant-checkbox + span{
+  padding:0px;
+  font-size: 12px;
+}
+
+.viewField{
+  border: 1px solid #e3e3e3;
+  display: block;
+  padding: 4px 10px;
+  border-radius: 3px;
+  background: #f0f0f036;
+  margin: 4px 0px;
+  font-size: 12px;
+  box-shadow: 1px 1px 2px #e9e9e9;
+}
+
+@media (max-width: 1000px) {
+  .ant-modal{
+    width:96% !important;
+  }
+}/*End 767*/

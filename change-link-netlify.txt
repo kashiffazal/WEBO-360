@@ -1,0 +1,19 @@
+WEBO Hosting
+===============
+REACT_APP_DOMAIN_PRO=https://webo360mailer.com/webo360
+REACT_APP_LINK_DOMAIN_PRO=createwebo1.com
+$clientDomainForLink = "https://webo.createwebo1.com";
+"homepage": "https://webo.webo360mailer.com/",
+
+
+Innotech Cloud Hosting
+===============
+REACT_APP_DOMAIN_PRO=https://webo360.innotechcloud.com/back-end
+REACT_APP_LINK_DOMAIN_PRO=webo360.innotechcloud.com/app_client_sub_domains
+$clientDomainForLink = "https://webo360.innotechcloud.com";
+"homepage": "https://webo360.innotechcloud.com/",
+
+
+
+REACT_APP_DOMAIN_DEV=http://localhost/myProjects/react/WEBOMailer360/WEBOMailer360/back-end
+REACT_APP_LINK_DOMAIN_DEV=http://localhost/myProjects/react/WEBOMailer360/WEBOMailer360/public/app_client_sub_domains

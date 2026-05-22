@@ -1,0 +1,39 @@
+.antd-dynamic-field-com{
+  .col_box{
+    height: 75px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 5px;
+    .text{
+      width: 100%;
+      font-weight: 500;
+      color: #464646;
+    }
+    .add, .remove{
+      font-size: 19px;
+      margin-left: 8px;
+      transition: transform .3s; /* Animation */
+    }
+    .add{color: #128250;}
+    .remove{color: #cd3206;}
+    .add:hover, .remove:hover{transform: scale(1.2);}
+    .nested_icon{font-size:16px;margin-left: 10px;}
+
+    .action_disabled{
+      color: currentColor !important;
+      cursor: not-allowed;
+      opacity: 0.5;
+      text-decoration: none;
+      pointer-events: none;
+    }
+  }//End .action_btn
+  .action_add_bottom{
+    text-align: right;
+  }//End action_add_bottom
+  .hidden{
+    visibility: hidden;
+    height: 0px;
+    margin: 0px;
+  }
+}//End .antd-dynamic-field-com{

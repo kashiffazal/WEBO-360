@@ -1,0 +1,54 @@
+@import '~antd/dist/antd.css';
+
+/*Change ant container styles*/
+.ant-container{padding:30px 40px 80px;position:relative;}
+
+/*Change default form styles*/
+.ant-form-item{margin:0px !important;}
+.ant-form-item-label{line-height:18px !important;}
+
+/*Change tab card styles*/
+.ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active{
+  box-shadow: 0px 0px 50px #d4d4d4;
+  z-index: 1; 
+  font-weight:400
+}
+
+/*Form input error msg*/
+/* .ant-form-explain{
+  position: absolute;
+  width: 100%;
+  font-size: 12px !important;
+  text-align:right;
+  border:1px solid red;
+} */
+
+/*Breadcrumb styles*/
+.ant-breadcrumb .ant-breadcrumb-link{cursor: pointer}
+.ant-breadcrumb > span:last-child .ant-breadcrumb-link{cursor: unset !important;}
+.ant-breadcrumb{
+  margin-bottom: 9px !important;
+}
+
+/*tooltip Styles*/
+/* .ant-tooltip-inner{
+  background-color: rgb(85, 171, 231) !important;
+}
+.ant-tooltip-placement-top .ant-tooltip-arrow, .ant-tooltip-placement-topLeft .ant-tooltip-arrow, .ant-tooltip-placement-topRight .ant-tooltip-arrow{
+  border-right-color: rgb(85, 171, 231) !important;
+  border-bottom-color: rgb(85, 171, 231) !important;
+} */
+
+
+
+@media (max-width: 1200px) {
+  .ant-btn-lg{font-size: 14px !important}
+}/*End 1200*/
+
+@media (max-width: 1100px) {
+  .ant-btn-lg{font-size: 13px !important}
+}/*End 1200*/
+
+@media (max-width: 991px) {
+  .ant-btn-lg{font-size: 14px !important}
+}/*End 1200*/

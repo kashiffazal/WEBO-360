@@ -1,0 +1,350 @@
+.personal_detail_container:before{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    height: 100%;
+    min-height: 600px;
+    width: 8px;
+    /* background: url(/image/left-sidebar-shadow.png); */
+    background-repeat: no-repeat
+}
+.personal_data{
+    padding: 15px;
+    padding-bottom: 17px;
+    margin-bottom: 5px;
+    border: 1px solid #d8d8d8;
+    background-color: #f2f2f2;
+    text-shadow: 0 1px 0 hsla(0,0%,100%,.65);
+    border-bottom: 2px solid #d2d2d2;
+    border-right: 0;
+}
+
+.personal_data .avatar{
+    /* margin-right: 15px;
+    float: left; */
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 1px 1px hsla(0,0%,100%,.7);
+    width: 70px;
+    height: 70px;
+}
+.personal_data .avatar:before{
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: "";
+    position: absolute;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.2), inset 0 -1px 0 rgba(0,0,0,.05);
+}
+
+.personal_data p{
+    font-size: 12px;
+    line-height: 1.333;
+}
+.personal_data .name{
+    padding: 0;
+    margin: 0;
+    padding-bottom: 6px;
+    color: #434343;
+    word-wrap: break-word;
+    background-color: #f2f2f2;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-top: 3px;
+
+}
+.personal_data .email{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -webkit-mask-image: -webkit-gradient(linear,right top,left bottom,from(transparent),color-stop(.1,#000),to(#000));
+    word-wrap: normal;
+    -webkit-font-smoothing: antialiased;
+    background-color: #f2f2f2;
+
+
+    font-weight: 700;
+    color: gray;
+    padding: 0;
+    padding-bottom: 5px;
+    position: relative;
+    margin: 0px;
+
+}
+.personal_data .read_email{
+    color: #adadad;
+    padding: 0;
+    margin: 0px;
+}
+
+
+
+
+.location{
+    background-color: #f6f1e8;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #e5e5e5;
+    text-shadow: 0 1px 0 hsla(0,0%,100%,.65);
+    display: block;
+    border: 1px solid #d8d8d8;
+    border-bottom: 2px solid #d2d2d2;
+    border-right: 0;
+}
+.location .map{
+    display: block;
+    width: 100%;
+    height: 112px;
+    background: #e4dfd4;
+    /* background-image: url(/image/map-default.jpg); */
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: relative;
+    background-size: cover;
+}
+.location .map:after{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    box-shadow: inset 0 2px 2px rgba(0,0,0,.05);
+}
+.location .mapcaption{
+    display: block;
+    padding: 12px 20px 12px 36px;
+    color: #a8977a;
+    background: #f6f1e8;
+    /* background-image: url(/image/pin.png); */
+    background-position: 23px 14px;
+    background-repeat: no-repeat;
+    line-height: 1.4;
+    font-size: 12px;
+}
+
+
+
+.status_details{
+    margin-bottom: 5px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #f2f2f2;
+    text-shadow: 0 1px 0 hsla(0,0%,100%,.65);
+    display: block;
+    border: 1px solid #d8d8d8;
+    border-bottom: 2px solid #d2d2d2;
+    border-right: 0;
+}
+.status_details .status{
+    padding: 11px 23px;
+    border-bottom: 1px solid #dedede;
+}
+.status_details .status label{
+    display: block;
+    margin-right: 15px;
+    margin-top: 1px;
+    color: #adadad;
+}
+.status_details .status .status_data{
+    color: gray;
+    font-weight: 500;
+    font-family: Helvetica Neue,Arial,Helvetica,sans-serif;
+    position: relative;
+    font-size: 12px
+}
+.status_details .edit_btn_container{
+    padding: 11px 23px;
+    background-color: #ebebeb!important;
+    border-top: 1px solid #ddd;
+}
+.status_details .edit_btn_container .button{
+    /* max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    display: inline-block;
+
+    background-color: #fff;
+    background-image: linear-gradient(hsla(0,0%,100%,.03),rgba(0,0,0,.03));
+    border: 1px solid #c7c7c7;
+    border-bottom-color: #bdbdbd;
+    border-top-color: #d3d3d3;
+    border-radius: 3px;
+    box-shadow: inset 0 -4px 5px 0 rgba(0,0,0,.05), inset 0 2px 0 0 hsla(0,0%,100%,.8), 0 1px 1px rgba(0,0,0,.06);
+    box-sizing: content-box;
+    color: #777;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Helvetica Neue,arial,Helvetica,sans-serif;
+    font-style: inherit;
+    font-weight: 700;
+    font-size: 12px;
+    min-width: 36px;
+    outline: none;
+    padding: 4px 11px 5px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 hsla(0,0%,100%,.75);
+    transition: background-color .1s;
+    vertical-align: middle;
+    -moz-osx-font-smoothing: grayscale; */
+}
+
+
+
+
+.campaign_detail_container{
+    margin-left: 30px;
+}
+
+.campaign_detail_container .stat {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #dedede;
+    box-shadow: inset 0 1px 0 #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    padding-left: 20px;
+    margin: 0px;
+}
+.campaign_detail_container .stat:before,
+.campaign_detail_container .activity:before{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: pink;
+    box-shadow: inset -1px 0 0 rgba(0,0,0,.1);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,hsla(0,0%,100%,.4)),color-stop(1,hsla(0,0%,100%,0)));
+}
+.campaign_detail_container .Clicked:before{
+    background-color: #3385e0;
+}
+.campaign_detail_container .Opened:before {
+    background-color: #30a106;
+}
+.campaign_detail_container .Unsubscribed:before {
+    background-color: #e22040;
+}
+.campaign_detail_container .count{
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+    padding-right: 20px;
+}
+.campaign_detail_container .msg{
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+}
+.campaign_detail_container .campaign_detail_link{
+    float: right;
+    font-size: .8em;
+    color: #b4b4b4;
+    font-weight: 400;
+    padding-top: 3px;
+}
+.campaign_detail_container .last_activity{
+    color: #b4b4b4;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.campaign_detail_container .activity{
+    display: block;
+    position: relative;
+    padding: 10px 0;
+    padding-left: 15px;
+    border-bottom: 1px solid #ededed;
+    color: #a1a1a1;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+    line-height: 11px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.campaign_detail_container .activity strong{
+    color: #2e2e2e;
+    font-weight: 600;
+    padding-right: 6px;
+    float: left;
+    font-size: 12px;
+}
+.campaign_detail_container .activity .truncate{
+    color: #a1a1a1;
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+}
+.campaign_detail_container .activity small{
+    float:right;
+    margin-right: 10px;
+}
+.campaign_detail_container .activity span{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* background: url(/image/pin.png) no-repeat 0px 3px; */
+    padding-left: 12px;
+    font-size: 12px;
+}
+.campaign_detail_container .activity:nth-child(odd) {
+    background-color: #fcfcfc;
+}
+
+.campaign_detail_container .Opened:before {
+    background-color: #30a106;
+}
+.campaign_detail_container .Clicked:before {
+    background-color: #3385e0;
+}
+.campaign_detail_container .Unsubscribed:before {
+    background-color: #e22040;
+}
+
+@media (max-width: 767px) {
+    .campaign_detail_container{
+        margin-left:unset;
+    }
+    .personal_data .avatar{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow:unset;
+    }
+    .personal_data .avatar img{
+        width:70px;
+    }
+    .personal_data .avatar:before{
+        width:70px;
+        height:70px;
+    }
+    .personal_data .user_details{
+        text-align: center;
+        margin-top: 10px;
+    }
+}/*End 767*/
+@media (max-width: 567px) {
+    .campaign_detail_container .activity .truncate{
+        width:100px
+    }
+}/*End 567*/

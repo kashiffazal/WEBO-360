@@ -1,0 +1,145 @@
+.c_k_upload_0 .dropzoneBoxContainer{
+    border: 1px solid #dbdbdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    background: #f0f2f4;
+    /* border-radius: 5px;
+    border-left: none;
+    border-right: none; */
+    cursor: pointer;
+}
+.c_k_upload_0 .dropzoneBox{
+    width: 100%;
+    height: 100%;
+    background-color: #f0f2f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.c_k_upload_0 .dropBoxInnerText{
+    background-image: url("./dragIcon.png");
+    background-position: center 49px;
+    background-repeat: no-repeat;
+    background-size: 110px;    
+    height:100%
+}
+.c_k_upload_0 .dropBoxInnerText:after,
+.c_k_upload_0 .dropBoxInnerTextSecond:after{
+    content: "Drag and drop or click here";
+    color: #677682;
+    font-size: 34px;
+    position: relative;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    bottom: -170px;
+
+}
+.c_k_upload_0 .dropBoxInnerTextSecond:after{
+    content: "to upload your image";
+    font-size: 24px;
+    color: #a6b6c2;
+    font-weight: unset;
+    bottom:77px
+}
+.c_k_upload_0 .dragDropContainer{
+    border: 2px dashed #acacac;
+    height: 74%;
+    width: 50%;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.uploadImageModal .ant-modal-footer{
+    display: none;
+    /* border:10px solid red; */
+}
+
+
+.c_k_upload_0 .canvasPreview{
+    border: 1px solid #dbdbdb;
+    width: 215px;
+    height: 241px;
+    background: #f1f1f1;
+    background-image: url("./no-preview.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.c_k_upload_0 .canvasPreview:after{
+    content:"No Preview Available"
+}
+.c_k_upload_0 .profilePreview{
+    background-image: url("./user1.png");
+}
+.c_k_upload_0 .uploadImageModalFooter{
+    text-align: center;
+    /* margin: -24px; */
+    padding: 25px;
+    border-top: 1px solid #e8e8e8;
+    /* margin-top: 25px; */
+}
+.c_k_upload_0 .uploadImageModalFooterBtn{
+    width:150px
+}
+
+
+.c_k_upload_0 .uploadImageModal .ant-modal-title{
+    color: #818181;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.c_k_upload_0 .uploadImageAnchorLink{
+    display: inline-block;
+    text-decoration: none;
+}
+.c_k_upload_0 .uploadImageAnchorLink:after{
+    content: 'Upload Profile Image';
+    position: relative;
+    top: -28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    padding: 7px;
+    background: #0000007d;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Roboto';
+}
+
+
+
+/** File input styles*/
+.c_k_upload_0 .uploadImageInputfile {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: -6px;
+}
+
+.c_k_upload_0 .uploadImageInputfile .btn {
+    border: none;
+    color: #ffffff;
+    background-color: #3e7dc3;
+    padding: 8px 20px;
+    border-radius: 0px;
+    width: 100%;
+    border-radius: 0px 0px 3px 3px;
+    cursor: pointer;
+}
+
+.c_k_upload_0 .uploadImageInputfile input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}

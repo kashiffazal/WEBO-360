@@ -1,0 +1,112 @@
+/*Custom Containers*/
+.container_1{background: #f9f9f9;padding: 14px 20px;border-radius: 5px;margin-bottom: 20px;}
+.container_2{background: #f9f9f9;padding: 30px 30px;border-radius: 5px;border: 1px solid #d9d9d9;box-shadow: 2px 2px 3px #d0d0d0;margin-bottom: 20px;}
+.container_3{
+  padding: 20px 20px;border-radius: 5px;border: 1px dashed #d9d9d9;margin-bottom: 20px;
+  background: rgb(251,251,251);
+  background: -moz-linear-gradient(0deg, rgba(251,251,251,1) 0%, rgba(250,250,250,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(251,251,251,1) 0%, rgba(250,250,250,1) 100%);
+  background: linear-gradient(0deg, rgba(251,251,251,1) 0%, rgba(250,250,250,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fbfbfb",endColorstr="#fafafa",GradientType=1);
+}
+
+/*Some Basic and Custom styles*/
+p{color:#272727;}
+.text-green{color:green !important;}
+.text-red{color:red !important;}
+.btnToAnchor{text-align:left;border: none;font-size: inherit;color:#3e7dc3;padding: 0px;line-height: inherit;height: 22px;background: unset;outline: unset;cursor: pointer;}
+.btaColor{color:#808080}
+.pageTitle{font-size: 20px;font-weight: 500;margin-bottom: 3px;}
+.pageDesc{font-size: 13px;}
+.hr-dashed{border: 0.5pt dashed #b1b1b1;}
+.hr-dashed_2{border: 0.5pt solid #b9b9b9;border-style: dashed;margin: 0px;}
+
+/*Add starik for custom required field*/
+.requiredStarik:before{display: inline-block;margin-right: 4px;content: "*";font-family: SimSun;line-height: 1;font-size: 14px;color: #f5222d;}
+
+/*Hind modal footer custom class*/
+.hide-modal-footer .ant-modal-footer{display: none}
+.hide-modal-header .ant-modal-header{display: none}
+/*Input and Button group*/
+.group > .ant-row{display: inline-block;width: 65%;}
+.group button{width: 35%;border-radius: 0px 4px 4px 0px;margin: 4px 0px;}
+.group button.ant-btn-lg{margin: 0px;}
+.group button.ant-btn-sm{margin: 8px 0px;}
+.group .ant-row input{border-radius: 4px 0px 0px 4px;}
+
+/*Form Styles*/
+.formStyle_1{padding: 20px !important;}
+.formStyle_1 input{padding: 20px;margin-bottom: 4px;margin-top: 4px;}
+.formStyle_1 .ant-select-selection--single{height: 42px;padding-top: 6px;margin-top: 4px;margin-bottom: 4px;padding-left: 10px;}
+.formStyle_2 .ant-form-item{padding-bottom: 15px;}
+.formStyle_2 .ant-form-item:last-child{padding-bottom: 0px;}
+
+/*Other unuse */
+.csv_upload .ant-upload{display: block !important;}
+.unsubscribed{color: red;font-weight: 600;}
+.active{color: green;font-weight: 600;}
+
+/*Dropdown in list*/
+.list-dropdown{border: 1px solid #d9d9d9;min-width: 135px;border-top: 1px solid #e9e9e9;border-radius: 0px 0px 3px 3px;}
+.list-dropdown li{font-size: 12px;}
+.list-dropdown li i{margin-right: 5px;}
+.list-dropdown li a{color: #323232;}
+
+.hide-required-label, .hide-required-label .ant-form-explain{display:none !important;}
+
+.tag{
+  cursor: pointer;
+  background: #ffffb6;
+  padding: 0px 4px;
+  border-radius: 3px;
+  margin: 2px 5px 2px 0px;
+  display: inline-block;
+  box-shadow: 1px 1px 2px #afafaf;
+}
+.tag:hover{
+  box-shadow: inset 0px 0px 0px 1px #e1e1e1;
+}
+
+.truncate{
+  color: #3a3a3a;
+  max-width: 250px;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  float: left;
+  text-decoration: none;
+}
+
+.wave-bg {
+  background: url(./waves.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: 82% top !important;
+}
+.wave-bg-bottom {
+  background: url(./b-wave.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: left bottom !important;
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  bottom: 40px;
+  margin: -40px;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+
+
+footer{position: fixed;left: 0;bottom: 0;width: 100%;text-align: center;background: #f5f5f5;padding: 6px 40px;color: rgba(0, 0, 0, 0.65);font-size: 12px;z-index: 10;border-top: 1px solid #e9e9e9;}
+
+@media (max-width: 576px) {
+  .pageTitle{font-size: 18px}
+  .pageDesc{font-size: 12px}
+}/*End 576*/
+@media (max-width: 500px) {
+  .pageTitle{font-size: 18px}
+}/*End 500*/
+@media (max-width: 400px) {
+  .pageTitle{font-size: 16px}
+}/*End 400*/

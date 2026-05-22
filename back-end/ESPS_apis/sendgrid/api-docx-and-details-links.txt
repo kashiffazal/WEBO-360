@@ -1,0 +1,41 @@
+Login Account
+-------------
+https://app.sendgrid.com/login
+Username: bpogroup
+Password: JKaCR1988W$
+
+API Key : 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
+
+PHP API Integration
+-------------------
+https://app.sendgrid.com/guide/integrate/langs/php
+
+PHP Liberary on Github
+-----------------------
+https://github.com/sendgrid/sendgrid-php
+
+Use Cases
+---------
+https://github.com/sendgrid/sendgrid-php/blob/master/USE_CASES.md
+https://github.com/sendgrid/sendgrid-php/blob/master/USAGE.md#stats
+
+https://sendgrid.com/docs/API_Reference/api_v3.html
+https://sendgrid.api-docs.io/v3.0/email-activity/filter-messages-by-message-id
+
+
+9YqX9vXlToK-ZfgoczrK3w
+vGOyZoBJSm2MI23BPWNVsQ
+5ay0f_-NThelSkxKUNRbCQ
+j5z9j_6ZQryKSlu9nnrmtg
+hlHipShOSS-6EbM_eOhpJQ
+YuNiRy9TRVGwTtVFJLj7dg
+f8MHPB18QTGKLhHUl7NSMg
+
+j5z9j_6ZQryKSlu9nnrmtg.filterdrecv-p3las1-5bf99c48d-wcj2p-18-5E031BAE-D.1
+YuNiRy9TRVGwTtVFJLj7dg.filterdrecv-p3las1-5bf99c48d-wk5m6-20-5E032748-31.2
+
+
+83mQqYw9u9SVz2jcE1enTQ
+FoCzYUA8MnZLO3JL9TK4Rg
+NHZiJYTdRbVHcPlajoS9bg
+HtVvYRfUXBDuJCD2FxNIeQ

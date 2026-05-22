@@ -1,0 +1,35 @@
+.modal_container{
+  border: 1px solid #c8c8c8;
+  height: 350px;
+  overflow: auto;
+  padding: 15px;
+  border-radius: 2px;
+  background: #fcfcfc;
+}
+.c_c_agreementModal .btnToAnchor{
+  font-size: 14px !important;
+  height: 22px !important;
+  background: none;
+  color: #187dc3;
+  cursor: pointer;
+  /* width: 100%; */
+  text-align: left;
+  outline: none;
+}
+
+/*Hind modal footer custom class*/
+.c_c_agreementModal .hide-modal-footer .ant-modal-footer{display: none}
+.c_c_agreementModal .hide-modal-header .ant-modal-header{display: none}
+
+
+
+/*Checkbox Styles*/
+.c_c_agreementModal .ant-checkbox-wrapper{
+  border: 1px solid #e0e0e0;
+  background: #f8f8f8;
+  border-radius: 2px;
+  /* margin-right: 10px; */
+}
+.c_c_agreementModal .ant-checkbox-wrapper .ant-checkbox{
+  padding: 6px 5px 4px 5px;
+}

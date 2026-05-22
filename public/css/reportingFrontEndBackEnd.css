@@ -1,0 +1,177 @@
+@import url('../fonts/Roboto/Roboto.css');
+/* *{
+  font-family: 'Roboto', sans-serif;
+} */
+.highcharts-credits{
+    display: none !important;
+}
+.reportContainer > p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.reportContainer .ant-btn{
+    background-image: linear-gradient(#fff,#f0f0f0);
+}
+.reportContainer .pieChartList, 
+.reportContainer .pieChartList2{
+    margin:0px;
+    padding:0px;
+    list-style: none;
+    font-size: 12px;
+    margin-top: 20px
+}
+.reportContainer .pieChartList b,
+.reportContainer .pieChartList2 b{
+    font-size: 18px
+}
+.reportContainer .pieChartList2 b{
+    margin-right:5px
+}
+.reportContainer .pieChartList span:first-child{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 3px;
+    background: #90ed7d;
+    margin-right: 8px;
+}
+.reportContainer .pieChartList .label{
+    font-size: 14px;
+    padding-left: 5px;
+}
+.reportContainer .pieChartList p,
+.reportContainer .pieChartList2 p{
+    padding-left: 18px;
+    color:#7f7f7f;
+    margin-top: -3px;
+}
+.reportContainer .pieChartList2 p{
+    padding-left:0px
+}
+
+
+.reportContainer .lineChartcontainer .label{
+    text-align: right;
+    font-size: 11px;
+    color:#444;
+    padding-top: 2px;
+}
+.reportContainer .lineChartcontainer .label .colorDot{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    background: #048036;
+    margin-right: 1px;
+}
+
+.reportContainer .sectionTitle{
+    background-color: #f0f0f0;
+    background-image: linear-gradient(#fff,#f0f0f0);
+    border: 1px solid #dedede;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #c6c6c6;
+    padding: 8px 6px 7px;
+    font-size: 11px;
+    color: #777;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 #fff;
+    box-shadow: 0 2px 0 0 rgba(0,0,0,.05);
+    position: relative;
+    z-index: 1;
+
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 9px;
+    text-transform: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 8px 15px;
+}
+
+.reportContainer .sectionContent{
+    padding: 10px 15px;
+}
+
+.reportContainer .sectionContent .linkShort{
+    color: #a1a1a1;
+    max-width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+    text-decoration: none;
+
+}
+
+
+
+/*Popular Links*/
+.reportContainer .popularLinks .dataHighlight{
+    background: #feffde;
+    border: 1px solid #ebebc7;
+    border-radius: 5px;
+    margin: 5px 0 20px;
+    padding: 15px 18px;
+}
+.reportContainer .popularLinks .countContainer{
+    /* display: flex; */
+}
+.reportContainer .popularLinks .countContainer .peopleClicked,
+.reportContainer .popularLinks .countContainer .secondary{
+    background: #9ddb84;
+    border-radius: 3px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #346720;
+    text-align: center;
+    padding: 6px 0px;
+    margin-right: 10px;
+}
+.reportContainer .popularLinks .countContainer .secondary{
+    background: #d3d4c0;
+    color: #94948e;
+}
+
+
+.reportContainer .popularLinks .countContainer h2{
+    color: #4a4a47;
+    font-size: 16px;
+    padding: 2px 0 1px;
+    line-height: 18px;
+    margin: 0px;
+}
+
+.reportContainer .popularLinks .countContainer .goalDescription{
+    font-size: 12px;
+    margin: 0px;
+    color:#565656;
+}
+
+
+@media (max-width: 991px) {
+    .reportContainer .popularLinks .countContainer .peopleClicked,
+    .reportContainer .popularLinks .countContainer .secondary{
+        padding:6px 5px
+    }
+}/*End 567*/
+
+@media (max-width: 767px) {
+    .reportContainer .popularLinks .countContainer .mb_down{
+        border-bottom: 1px solid #ebebc7
+    }
+    .reportContainer .popularLinks .countContainer .mb_down td:first-child,
+    .reportContainer .popularLinks .countContainer .mb_down .goalDescription{
+        padding-bottom: 10px;
+    }
+    .reportContainer .popularLinks .countContainer .mb_up td:first-child,
+    .reportContainer .popularLinks .countContainer .mb_up .goalDescription{
+        padding-top: 10px;
+    }
+}/*End 767*/
+
+@media (max-width: 567px) {
+    .reportContainer .sectionContent  .linkShort{
+        width:100px
+    }
+    
+}/*End 567*/

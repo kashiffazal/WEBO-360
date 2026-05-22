@@ -1,0 +1,264 @@
+.primaryHeader{
+    padding:0px 40px;
+    background: rgb(40,37,37);
+    background: -moz-linear-gradient(0deg, rgba(40,37,37,1) 0%, #3b3f42 70%);
+    background: -webkit-linear-gradient(0deg, rgba(40,37,37,1) 0%, #3b3f42 70%);
+    background: linear-gradient(0deg, rgba(40,37,37,1) 0%, #3b3f42 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#282525",endColorstr="#3b3f42",GradientType=1);
+  }
+  .primaryHeader a.link{
+    display: inline-block;
+    padding: 10px 12px;
+    color: #d8dee3;
+    font-size: 12px;
+    font-family: 'Roboto';
+    position: relative;
+    letter-spacing: .683px;
+    text-shadow: 0 0 2px rgba(0,0,0,.9);
+    transition: all .2s;
+    border-right: 1px solid #6b6b6b;
+  }
+  /* .primaryHeader a.link.active:after{
+    content: "";
+    border-bottom: 4px solid #b7bbc1;
+    position: absolute;
+    bottom: 0;
+    left: 8%;
+    width: 85%;
+  } */
+  .primaryHeader a.link:hover{color:#fff}
+  .primaryHeader a.link.active{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    background: #455f6f;
+  }
+  
+  
+
+  .secondaryHeader{
+    padding:0px 40px;
+    color:#fff;
+    background: rgb(25,169,229);
+    background: -moz-linear-gradient(90deg, #55abe61f  0%, rgba(54,195,254,1) 52%, rgba(25,169,229,1) 100%);
+    background: -webkit-linear-gradient(90deg, #55abe61f  0%, rgba(54,195,254,1) 52%, rgba(25,169,229,1) 100%);
+    background: linear-gradient(90deg, #55abe61f  0%, rgba(54,195,254,1) 52%, rgba(25,169,229,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#19a9e5",endColorstr="#19a9e5",GradientType=1);
+  }
+  .secondaryHeader .logoContainer{
+    /* border: 1px solid #55aae5; */
+    /* background: white; */
+    padding: 10px 0px;
+    /* border-radius: 10px;
+    border-style: dashed; */
+  }
+  .secondaryHeader .logoLabel{
+      font-size: 22px;
+      padding-right: 30px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  }
+  /* .secondaryHeader .status{
+      letter-spacing: .41px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.2);
+      color: #ffffffd9;
+      padding-right:10px;
+  } */
+  /* .secondaryHeader .tempCompanyName{
+    letter-spacing: .41px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+    padding-left: 10px;
+  } */
+  .secondaryHeader a{color:#ffffffd9;text-shadow: 0 1px 1px rgba(0,0,0,.2);text-decoration: none}
+  .secondaryHeader a:hover{color:#fff}
+
+
+  .secondary-header-drop-down {
+	background: #fff;
+	border: 1px solid #c2e1f5;
+  margin-top: 15px !important;
+  /* right:28px */
+}
+.secondary-header-drop-down:after, .secondary-header-drop-down:before {
+	bottom: 100%;
+	left: 77%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.secondary-header-drop-down:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #fff;
+	border-width: 8px;
+	margin-left: 6px;
+}
+.secondary-header-drop-down:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: #c2e1f5;
+	border-width: 9px;
+	margin-left: 5px;
+}
+
+/*sub menu drop down icon*/
+.sub_menu_icon .ant-dropdown-menu-submenu-title:before{
+  content:'\f0c0';
+  font-family: FontAwesome;
+  padding-right: 9px;
+}
+
+.primary-header-drop-down{
+  border: 1px solid #a5a5a5;
+  top: -5px;
+  padding: 0px;
+  border-radius: 0px 0px 3px 3px;
+}
+.primary-header-drop-down li{
+  padding: 0px;
+}
+.primary-header-drop-down a{
+  padding: 5px 12px;
+  margin: 0px;
+  font-size: 13px;
+}
+.primary-header-drop-down a i,
+.primaryHeader a.link i{
+  padding-right: 2px
+}
+
+/* padding: 5px 12px; */
+
+
+
+
+
+
+
+
+
+
+
+.icon{display: none;}
+#menu{display: none;}
+@media (max-width: 767px){
+  .primary-header-drop-down{
+    border: 1px solid #dfdfdf;
+    width: -moz-max-content;
+    float: right;
+    margin-right: 30px;
+    top: -10px;
+  }
+  .primary-header-drop-down li a{
+    padding: 8px 20px;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e2e2;
+    color: #1f1f1f;
+  }
+
+  .navigationMenuMob .ant-dropdown-trigger .drIcon{
+    float: right;
+    font-size: 16px;
+  }
+
+  .navigationMenuMob{
+    visibility: hidden;
+    opacity: 0;
+    /* height: 50px; */
+    margin:0px;
+    padding: 0px !important;
+    position: absolute;
+    left: 0;
+    right: 20px;
+    -webkit-transition: all 220ms ease-out;
+    -moz-transition: all 220ms ease-out;
+    -o-transition: all 220ms ease-out;
+    transition: all 220ms ease-out;
+  }
+  .navigationMenuMob a{
+    border-bottom: 1px solid dimgrey;
+    background: #1f1f1f;
+    padding: 10px 40px !important;
+    display: block !important;
+    margin: 0px -20px;
+  }
+  .icon{
+    display: block;
+    height: 41px;
+  }
+  .icon span{
+    color: #fff;
+    padding: 9px 0px 8px 0px;
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+    z-index: 10;
+    position: absolute;
+  }
+  .icon i{
+    display: block;
+    position: relative;
+    top: 12px;
+    z-index: 1000;
+    right: 0px;
+    float: right;
+    font-size: 18px;
+    /* padding: 7px 10px; */
+    border-radius: 5px;
+    color: white;
+  }
+  
+    #menu:checked + .navigationMenuMob {
+      /* // border:5px solid red; */
+      visibility: visible;
+      opacity: 1;
+      position: relative;
+      /* //height: auto; */
+      list-style: none;
+      padding: 0px;
+      margin: 0;
+      /* padding-top: 50px !important; */
+      margin: 0px -20px;
+      height: auto;
+  }
+
+
+}/*End 767*/
+@media (max-width: 575px){
+  .secondaryHeader .logoContainer{
+    padding: 13px 0px;
+  }
+  .secondaryHeader .logoContainer img{
+      width: 100px !important;
+  }
+}
+
+
+
+
+/*New Logo Rectangle Design*/
+/* .secondaryHeader .logoContainer{
+  position: absolute;
+  top: 0;
+  background: #fff;
+  padding: 10px 15px;
+  box-shadow: 0px -8px 8px #a3a3a3;
+}
+.secondaryHeader .logoContainer img{width:82px !important}
+.primaryHeader{padding-left: 155px;}
+@media (max-width: 767px){
+  .primaryHeader{padding-left: 40px;}
+  .primaryHeader label{padding-left: 135px;}
+  .secondaryHeader .logoContainer{padding:12px 15px}
+}
+@media (max-width: 400px){
+  .secondaryHeader .logoContainer{
+    position: unset;
+    background: unset;
+    padding: 5px 0px;
+    box-shadow: unset;
+  }
+  .secondaryHeader .logoContainer img{width:52px !important}
+  .primaryHeader label{padding:0px;}
+} */
